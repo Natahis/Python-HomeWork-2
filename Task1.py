@@ -5,10 +5,6 @@
 # - 6782 -> 23
 # - 0,56 -> 11
 
-
-from tkinter import N
-
-
 number = float(input('Введите любое вещественное число: '))
 if number < 0: number = number * (-1)
 sum = 0
