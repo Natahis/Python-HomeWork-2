@@ -6,9 +6,9 @@
 # - 0,56 -> 11
 
 number = (input('Введите любое вещественное число: '))
-sum = 0
+sum_num = 0
 for i in str(number):
         if i != '.' and i != ',' and i != '-':
-            sum += int(i)
+            sum_num += int(i)
 
-print(F'{number} -> {sum}')
+print(F'{number} -> {sum_num}')

@@ -11,9 +11,9 @@ while number < 1:
     number = int(input('Введите целое положительное число N: '))
 else:
     result = list()
-    com = 1
+    mult = 1
     for i in range(1, number+1):  
-        com = com * i
-        result.append(com)
+        mult *= i
+        result.append(mult)
     print(result)
 

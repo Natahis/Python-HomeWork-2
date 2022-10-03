@@ -4,13 +4,8 @@
 # Пример:
 # - Для n = 6: [2, 2, 2, 2, 2, 3] -> 13
 
-
-import numbers
-
-
-number = int(input('Введите положительное целое число n: '))
+num = int(input('Введите положительное целое число n: '))
 result = []
-for i in range(1, number+1):
-    # sum = sum + (1+1/i)**i
+for i in range(1, num+1):
     result.append(round((1+1/i)**i))
-print(f'Для числа {number}: {result} -> {sum(result)}')
+print(f'Для числа {num}: {result} -> {sum(result)}')
