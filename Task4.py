@@ -2,7 +2,8 @@
 # Найдите произведение элементов на указанных позициях. 
 # Позиции хранятся в файле file.txt в одной строке одно число.
 
-num = int(input('Введите целое положительное число: '))
+num = int(input('Введите целое число: '))
+if num < 0: num = - num
 num_list = list(range(-num,num+1))
 path = 'file.txt'
 data = open(path, 'r')
