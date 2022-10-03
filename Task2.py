@@ -5,9 +5,15 @@
 # - пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
 
-number = int(input('Введите Целое положительное число N=: '))
+number = int(input('Введите целое положительное число N: '))
+while number < 1: 
+    print('Неверный ввод!')
+    number = int(input('Введите целое положительное число N: '))
+else:
+    result = list()
+    com = 1
+    for i in range(1, number+1):  
+        com = com * i
+        result.append(com)
+    print(result)
 
-com = 1
-for i in range(1, number+1):  
-    com = com * i
-    print(com, end=' ')
